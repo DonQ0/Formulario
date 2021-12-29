@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Formulario::</title>
+</head>
+<body>
+
+    <h2>Cadastro do Cliente</h2>
+    <p>Complete suas informações   -    </p>
+    <fieldset>
+        <legend>Dados do Cliente</legend>
+        <form action="#">
+            <label for="nome">Nome :</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+            <br>
+            <label for="cidade">Cidade :</label>
+            <input type="text" name="cidade" id="cidade" placeholder="Ex:São João de Meriti" required>
+            <br>
+            <label for="">Endereço :</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Ex: Rua Pereira Silveira Santos" required>
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type="text" pattern="[0-9]{10}" name="telefone" id="telefone"  placeholder="Ex : 21 44484545" title="Ex : 21 44484545 " required >
+            
+            <label for="celular">Celular:</label>
+            <input type="text" name="celular" id="celular" placeholder="Ex: 21 988888888"  title="Ex : 21 988888888 " pattern="[0-9]{11}" required>
+            <br>
+            <label for="celular">E-mail:</label>
+            <input type="email" name="email" id="email"  required>
+            <br>
+            <label for="celular">Cpf:</label>
+            <input type="text" name="cpf" id="cpf" required>
+           <h4> <label for="cartao">Por qual mídia encontrou nossa loja?</label></h4>
+            <label for="midia0">facebook </label>
+            <input type="checkbox" name="mia" id="midia0">
+            <label for="midia">Instagram </label>
+            <input type="checkbox" name="midia" id="midia">
+            <label for="twitter">Twitter </label>
+            <input type="checkbox" name="midia" id="twitter">
+            <label for="midia">Outros </label>
+            <input type="checkbox" name="midia" id="outros">
+            <input type="submit" value="Enviar" id="button">
+            
+        </form>
+    </fieldset>
+    
+    
+</body>
+</html>
